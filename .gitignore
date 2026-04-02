@@ -1,0 +1,10 @@
+node_modules/
+
+# Hugo build output & cache (site root: rollaattorimarssi/)
+rollaattorimarssi/public/
+rollaattorimarssi/resources/_gen/
+
+.hugo_build.lock
+
+.DS_Store
+public/

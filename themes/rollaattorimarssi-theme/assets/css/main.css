@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "hugo_stats.json";
+@theme {
+    --color-turquoise: #5fbcd3;
+    --color-yellow: #ffdd55c0;
+    --color-pink: #ff5599;
+    --color-green: #aad400;
+    --color-lilac: #ab37c8;
+    --color-lightpink: #ff8ed1;
+    --flower-image-size: 140px;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+h1,
+h2 {
+    font-family: "Cherry Bomb One", display;
+}
+
+#main-menu ul li a {
+    font-family: "Cherry Bomb One", display;
+    &:hover {
+        color: #fff;
+    }
+}

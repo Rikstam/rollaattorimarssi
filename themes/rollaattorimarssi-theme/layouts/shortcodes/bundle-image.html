@@ -1,0 +1,6 @@
+{{- $match := .Get "match" | default (.Get 0) -}}
+{{- $alt := .Get "alt" | default (.Get 1) -}}
+{{- $class := .Get "class" | default (.Get 2) | default "w-full h-auto" -}}
+{{- with .Page.Resources.GetMatch $match -}}
+<img src="{{ .RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" />
+{{- end -}}
