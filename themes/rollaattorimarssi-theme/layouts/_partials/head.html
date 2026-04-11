@@ -1,10 +1,12 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
+    site.Title }}{{ end }}
+</title>
 <link rel="preconnect" href="https://fonts.bunny.net" />
 <link
-  href="https://fonts.bunny.net/css?family=cherry-bomb-one:400|quicksand:400,700"
-  rel="stylesheet"
+    href="https://fonts.bunny.net/css?family=cherry-bomb-one:400|kaushan-script:400|quicksand:400,700"
+    rel="stylesheet"
 />
-{{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}
+{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}
