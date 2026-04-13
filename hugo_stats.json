@@ -38,7 +38,6 @@
       "bg-turquoise",
       "bg-white",
       "container",
-      "disc",
       "flex",
       "font-bold",
       "fp-title",
@@ -51,7 +50,6 @@
       "lg:flex-nowrap",
       "lg:max-w-none",
       "lg:mb-0",
-      "list-style-type:",
       "list:disc",
       "max-w-4xl",
       "max-w-7xl",
@@ -66,16 +64,19 @@
       "md:gap-4",
       "md:h-dvh",
       "md:justify-between",
+      "md:justify-center",
       "md:justify-items-center",
       "md:mx-auto",
+      "md:py-8",
       "mt-4",
       "mt-6",
       "mx-auto",
       "pb-8",
+      "px-12",
       "px-16",
       "px-6",
+      "px-8",
       "py-2",
-      "py-3",
       "py-4",
       "py-6",
       "py-8",
@@ -98,7 +99,8 @@
       "SVGRepo_bgCarrier",
       "SVGRepo_iconCarrier",
       "SVGRepo_tracerCarrier",
-      "main-menu"
+      "main-menu",
+      "main-menu flex"
     ]
   }
 }

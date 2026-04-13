@@ -11,8 +11,8 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav id="main-menu">
-    <ul class="md-flex md-flex-wrap justify-center gap-4 py-8 md:mx-auto md:justify-items-center lg:flex lg:max-w-none lg:flex-nowrap">
+  <nav id="main-menu" class="flex justify-center">
+    <ul class="md-flex md-flex-wrap py-4 md:justify-center md:gap-4 md:py-8 md:mx-auto md:justify-items-center lg:flex lg:max-w-none lg:flex-nowrap">
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
   </nav>
@@ -33,8 +33,8 @@ Renders a menu for the given menu ID.
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <li class="mb-8 lg:mb-0">
-      <a class="text-2xl rounded-full bg-lightpink px-6 py-2"
+    <li class="mb-8 lg:mb-0 rounded-full bg-lightpink px-6 py-2 text-center">
+      <a class="text-2xl"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
